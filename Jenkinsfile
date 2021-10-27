@@ -12,8 +12,7 @@ pipeline {
                 '''
             }
         }
-    stages {
-         stage('Build Application'){
+        stage('Build Application'){
             steps {
                 sh 'mvn -f pom.xml clean package'
             }
